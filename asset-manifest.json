@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-country-app/static/css/main.e3b9062c.css",
+    "main.js": "/react-country-app/static/js/main.770fdb9f.js",
+    "static/js/787.e45aa525.chunk.js": "/react-country-app/static/js/787.e45aa525.chunk.js",
+    "static/media/world-map-with-countries-on-blue-background-vector-1336799.jpg": "/react-country-app/static/media/world-map-with-countries-on-blue-background-vector-1336799.de559db57af8c7e7421f.jpg",
+    "index.html": "/react-country-app/index.html",
+    "main.e3b9062c.css.map": "/react-country-app/static/css/main.e3b9062c.css.map",
+    "main.770fdb9f.js.map": "/react-country-app/static/js/main.770fdb9f.js.map",
+    "787.e45aa525.chunk.js.map": "/react-country-app/static/js/787.e45aa525.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3b9062c.css",
+    "static/js/main.770fdb9f.js"
+  ]
+}

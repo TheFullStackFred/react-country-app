@@ -17,7 +17,7 @@ export default function App() {
   const getData = async () => {
     const { data } = await axios.get(`https://restcountries.com/v3.1/all`)
     //Random 200 countries
-    const totalShownCountries = 200
+    const totalShownCountries = 201
     const picked = []
     for (let i = 0; i < totalShownCountries; i++) {
       const index = Math.floor(Math.random() * data.length)
@@ -33,18 +33,18 @@ export default function App() {
 
   return (
     data && (
-      <div className="App">
+      <div className='App'>
         <SomeContext.Provider
           value={
             <h2>
               <input
-                className="search-country"
-                placeholder="Search Country..."
+                className='search-country'
+                placeholder='Search Country...'
                 onChange={(event) => {
                   setSearchCountry(event.target.value)
                 }}
               />
-              <ul id="countries-ul">
+              <ul id='countries-ul'>
                 {data
                   .filter((country) => {
                     if (searchCountry === '') {
@@ -57,7 +57,7 @@ export default function App() {
                       return country
                   })
                   .map((country) => (
-                    <li className="li-card" key={country.name.common}>
+                    <li className='li-card' key={country.name.common}>
                       <Link to={`/country/${country.name.common}`}>
                         {country.name.common}
                       </Link>
@@ -69,13 +69,13 @@ export default function App() {
         >
           <BrowserRouter>
             <Navbar />
-            <main className="App-main">
+            <main className='App-main'>
               <Routes>
-                <Route element={<Home />} path="/" />
-                <Route element={<Countries />} path="/countries" />
-                <Route element={<Country />} path="/country/:id" />
-                <Route element={<Contact />} path="/contact" />
-                <Route element={<About />} path="/about" />
+                <Route element={<Home />} path='/' />
+                <Route element={<Countries />} path='/countries' />
+                <Route element={<Country />} path='/country/:id' />
+                <Route element={<Contact />} path='/contact' />
+                <Route element={<About />} path='/about' />
               </Routes>
             </main>
             <Footer />
